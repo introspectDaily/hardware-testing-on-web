@@ -1,0 +1,177 @@
+# Web 前端可访问硬件/设备 API 清单
+# 适用场景：纯静态 HTML/JS 开发，无需后端/插件
+# 核心原则：仅开放无隐私风险、用户可授权的硬件访问
+
+# 一、输入类设备（核心：用户交互，无隐私风险）
+input_devices:
+  - name: 游戏手柄
+    api: Gamepad API
+    core_capabilities: # 可测试/控制的能力
+      - 检测手柄连接/断开状态
+      - 读取按键按下/松开状态、压力值
+      - 读取摇杆轴坐标（-1~1）
+      - 部分手柄支持震动反馈
+    usage_scenarios: 游戏手柄全功能测试、游戏适配开发
+    compatibility: Chrome/Firefox/Edge（全平台支持）
+    notes: 需要用户点击页面触发交互后才能检测
+
+  - name: 触摸屏/触控笔
+    api: Touch Events + Pointer Events
+    core_capabilities:
+      - 检测触摸点坐标、数量
+      - 触控笔压力值、倾斜角度、橡皮擦模式
+      - 多点触控识别
+    usage_scenarios: 触屏精度测试、手写板/触控笔适配
+    compatibility: 所有现代浏览器（移动端优先）
+    notes: 桌面端需触摸屏设备支持
+
+  - name: 陀螺仪/加速度计
+    api: DeviceOrientation API + DeviceMotion API
+    core_capabilities:
+      - 读取设备旋转角度（α/β/γ 轴）
+      - 加速度、重力感应数据
+      - 摇一摇动作识别
+    usage_scenarios: 移动端传感器测试、运动类应用开发
+    compatibility: 移动端 Chrome/Edge/Safari（需开启传感器权限）
+    notes: 桌面端无此传感器，仅移动端可用
+
+  - name: 键盘/鼠标
+    api: Keyboard Event + Mouse Event
+    core_capabilities:
+      - 监听按键按下/松开、组合键
+      - 鼠标点击、滚轮、移动坐标
+      - 鼠标右键/中键识别
+    usage_scenarios: 输入交互测试、快捷键适配
+    compatibility: 所有浏览器
+    notes: 无需授权，原生支持
+
+  - name: 摄像头/麦克风
+    api: MediaDevices API (getUserMedia)
+    core_capabilities:
+      - 实时获取摄像头画面、麦克风音频
+      - 分辨率/帧率调整
+      - 音频降噪检测
+    usage_scenarios: 音视频测试、直播/会议功能开发
+    compatibility: 所有现代浏览器
+    notes: 需用户手动授权，仅支持同源页面
+
+# 二、通信类设备（核心：外设连接，需用户授权）
+communication_devices:
+  - name: 蓝牙设备
+    api: Web Bluetooth API
+    core_capabilities:
+      - 扫描附近蓝牙设备
+      - 连接兼容设备（耳机/手环/传感器）
+      - 读写蓝牙设备数据
+    usage_scenarios: 蓝牙设备连接测试、物联网设备交互
+    compatibility: Chrome（桌面+移动端）、Edge
+    notes: 需用户授权，仅支持 BLE 蓝牙设备
+
+  - name: USB 设备
+    api: WebUSB API
+    core_capabilities:
+      - 检测已连接的 USB 设备
+      - 读写 USB 设备数据
+      - 设备插拔状态监听
+    usage_scenarios: USB 打印机/读卡器/开发板测试
+    compatibility: Chrome、Edge（需用户授权）
+    notes: 仅支持兼容 WebUSB 协议的设备
+
+  - name: NFC 设备
+    api: Web NFC API
+    core_capabilities:
+      - 读取 NFC 标签（门禁卡/公交卡）
+      - 写入 NFC 标签数据
+    usage_scenarios: NFC 功能测试、近场支付适配
+    compatibility: Chrome 移动端（Android）
+    notes: 需用户授权，iOS 暂不支持
+
+  - name: 网络状态
+    api: Network Information API
+    core_capabilities:
+      - 检测网络类型（WiFi/5G/4G/有线）
+      - 网速估算、上下行带宽
+      - 离线/在线状态监听
+    usage_scenarios: 网络适配、离线应用开发
+    compatibility: 所有现代浏览器
+    notes: 网速为估算值，非精准测试
+
+# 三、显示/输出类设备（核心：输出反馈，无隐私风险）
+display_output_devices:
+  - name: 屏幕/显示器
+    api: Screen API
+    core_capabilities:
+      - 读取屏幕分辨率、刷新率
+      - 检测屏幕方向（横屏/竖屏）
+      - 部分设备支持亮度读取/调整
+      - HDR 支持检测
+    usage_scenarios: 多屏适配、显示器参数测试
+    compatibility: 所有浏览器
+    notes: 亮度调整仅部分移动端设备支持
+
+  - name: 扬声器/音频输出
+    api: Web Audio API
+    core_capabilities:
+      - 音频播放、音量控制
+      - 声道检测、音频频谱分析
+      - 音效处理（降噪/混响）
+    usage_scenarios: 音频播放测试、耳机/音箱适配
+    compatibility: 所有现代浏览器
+    notes: 需用户交互触发音频播放（禁止自动播放）
+
+  - name: 打印机
+    api: Window.print() + Print API
+    core_capabilities:
+      - 调用系统打印功能
+      - 自定义打印内容、样式
+      - 检测打印状态
+    usage_scenarios: 打印功能测试、报表打印开发
+    compatibility: 所有浏览器
+    notes: 依赖系统打印驱动，无硬件直接访问
+
+# 四、系统/生物识别类（有限支持，需严格授权）
+system_biometric:
+  - name: 电池状态
+    api: Battery Status API
+    core_capabilities:
+      - 读取电池电量、充电状态
+      - 剩余使用/充电时间
+      - 电量变化监听
+    usage_scenarios: 移动设备电池测试、低电量适配
+    compatibility: Chrome/Firefox/Edge（移动端优先）
+    notes: 桌面端仅笔记本支持，台式机无数据
+
+  - name: 生物识别（指纹/面容）
+    api: Web Authentication API (WebAuthn)
+    core_capabilities:
+      - 调用设备指纹/面容识别
+      - 身份验证（非数据读取）
+    usage_scenarios: 登录验证功能测试
+    compatibility: Chrome/Edge/Safari（需设备支持生物识别）
+    notes: 仅验证身份，无法读取生物特征数据
+
+# 五、不可访问的硬件（核心：隐私/安全限制，无开放 API）
+unaccessible_hardware:
+  - name: 硬盘/外接存储
+    reason: 涉及用户隐私数据，浏览器完全屏蔽
+    note: 仅能通过用户主动上传文件间接操作，无法检测硬件参数
+
+  - name: CPU/内存
+    reason: 系统级硬件，无标准化 API
+    note: 无法读取型号、使用率、容量等参数
+
+  - name: 显卡/GPU
+    reason: 仅能通过 WebGL 间接判断渲染能力，无直接访问 API
+    note: 无法读取型号、显存、使用率
+
+  - name: 主板/BIOS/串口
+    reason: 底层系统硬件，安全风险高
+    note: 仅企业版浏览器有限支持，普通场景不可用
+
+# 六、开发通用注意事项
+development_notes:
+  - 权限检测：使用 `if ("xxx" in navigator)` 提前判断 API 是否可用
+  - 用户授权：所有硬件 API 需用户主动点击/确认授权，禁止静默访问
+  - 兼容性：优先测试 Chrome/Edge，移动端需单独验证
+  - 错误处理：API 调用需加 try/catch，处理授权拒绝/设备不支持场景
+  - 隐私合规：禁止收集无关硬件数据，遵循 GDPR/国内隐私法规

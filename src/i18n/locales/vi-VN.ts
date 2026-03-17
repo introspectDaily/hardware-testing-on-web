@@ -1,0 +1,40 @@
+import { Translations } from '../types'
+import { en } from './en'
+
+export const viVN: Translations = {
+  ...en,
+  appTitle: 'Công cụ Kiểm tra Phần cứng',
+  appDescription: 'Kiểm tra trực tuyến màn hình, bàn phím, chuột, gamepad, camera và thiết bị âm thanh của bạn',
+  home: 'Trang chủ',
+  backToHome: 'Quay lại Trang chủ',
+  language: 'Ngôn ngữ',
+  screenTest: 'Kiểm tra Màn hình',
+  start: 'Bắt đầu',
+  stop: 'Dừng',
+  exit: 'Thoát',
+  keyboardTest: 'Kiểm tra Bàn phím',
+  keyboardTestTitle: 'Kiểm tra Bàn phím',
+  keyboardTestDescription: 'Kiểm tra phản hồi bàn phím, phát hiện trạng thái và chức năng phím',
+  testCoverage: 'Phạm vi Kiểm tra',
+  testedKeys: 'Phím Đã Kiểm tra',
+  resetTest: '🔄 Đặt lại Kiểm tra',
+  currentKeyInfo: 'Thông tin Phím Hiện tại',
+  pressedKeys: 'Đã Nhấn',
+  pressAnyKey: '👆 Nhấn phím bất kỳ để bắt đầu',
+  keyboardLayout: 'Bố cục Bàn phím',
+  navigationKeys: 'Điều hướng',
+  arrowKeys: 'Mũi tên',
+  keyHistory: 'Lịch sử Phím',
+  noKeyHistory: 'Chưa có lịch sử',
+  keyboardInstruction1: '🎯 Nhấn phím bất kỳ, hệ thống sẽ hiển thị thông tin theo thời gian thực',
+  keyboardInstruction2: '🎨 Phím chưa kiểm tra hiển thị màu xám, phím đã kiểm tra màu xanh lá',
+  keyboardInstruction3: '⚡ Phím đang nhấn được đánh dấu màu xanh dương và trở về bình thường khi thả ra',
+  keyboardInstruction4: '📊 Thử nhấn tất cả các phím để đạt 100% phạm vi kiểm tra',
+  keyboardInstruction5: '🔄 Nhấp vào "Đặt lại Kiểm tra" để bắt đầu lại',
+  detectedKeyboard: 'Bàn phím Phát hiện',
+  untested: 'Chưa Kiểm tra',
+  tested: 'Đã Kiểm tra',
+  pressing: 'Đang Nhấn',
+}
+
+export default viVN

@@ -1,0 +1,40 @@
+import { Translations } from '../types'
+import { en } from './en'
+
+export const plPL: Translations = {
+  ...en,
+  appTitle: 'Narzędzia Testowe Sprzętu',
+  appDescription: 'Online testuj swój ekran, klawiaturę, mysz, gamepad, kamerę i urządzenia audio',
+  home: 'Strona główna',
+  backToHome: 'Wróć do strony głównej',
+  language: 'Język',
+  screenTest: 'Test Ekranu',
+  start: 'Start',
+  stop: 'Zatrzymaj',
+  exit: 'Wyjdź',
+  keyboardTest: 'Test Klawiatury',
+  keyboardTestTitle: 'Test Klawiatury',
+  keyboardTestDescription: 'Testuj odpowiedź klawiatury, wykryj status i funkcje klawiszy',
+  testCoverage: 'Pokrycie Testu',
+  testedKeys: 'Przetestowane Klawisze',
+  resetTest: '🔄 Zresetuj Test',
+  currentKeyInfo: 'Info o Bieżącym Klawiszu',
+  pressedKeys: 'Wciśnięte',
+  pressAnyKey: '👆 Naciśnij dowolny klawisz aby rozpocząć',
+  keyboardLayout: 'Układ Klawiatury',
+  navigationKeys: 'Nawigacja',
+  arrowKeys: 'Strzałki',
+  keyHistory: 'Historia Klawiszy',
+  noKeyHistory: 'Brak historii',
+  keyboardInstruction1: '🎯 Naciśnij dowolny klawisz, system wyświetli informacje w czasie rzeczywistym',
+  keyboardInstruction2: '🎨 Nieprzetestowane klawisze są szare, przetestowane zielone',
+  keyboardInstruction3: '⚡ Wciśnięte klawisze są podświetlone na niebiesko i wracają do normy po zwolnieniu',
+  keyboardInstruction4: '📊 Spróbuj nacisnąć wszystkie klawisze aby osiągnąć 100% pokrycia',
+  keyboardInstruction5: '🔄 Kliknij "Zresetuj Test" aby rozpocząć od nowa',
+  detectedKeyboard: 'Wykryta Klawiatura',
+  untested: 'Nietestowane',
+  tested: 'Przetestowane',
+  pressing: 'Wciśnięte',
+}
+
+export default plPL

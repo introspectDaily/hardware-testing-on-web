@@ -1,0 +1,40 @@
+import { Translations } from '../types'
+import { en } from './en'
+
+export const nlNL: Translations = {
+  ...en,
+  appTitle: 'Hardware Testtools',
+  appDescription: 'Online test je scherm, toetsenbord, muis, gamepad, camera en audioapparaten',
+  home: 'Start',
+  backToHome: 'Terug naar Start',
+  language: 'Taal',
+  screenTest: 'Schermtest',
+  start: 'Starten',
+  stop: 'Stoppen',
+  exit: 'Afsluiten',
+  keyboardTest: 'Toetsenbordtest',
+  keyboardTestTitle: 'Toetsenbordtest',
+  keyboardTestDescription: 'Test toetsenbordreactie, detecteer toetsstatus en functies',
+  testCoverage: 'Testdekking',
+  testedKeys: 'Geteste Toetsen',
+  resetTest: '🔄 Test Resetten',
+  currentKeyInfo: 'Huidige Toetsinfo',
+  pressedKeys: 'Ingedrukt',
+  pressAnyKey: '👆 Druk op een willekeurige toets om te beginnen',
+  keyboardLayout: 'Toetsenbordindeling',
+  navigationKeys: 'Navigatie',
+  arrowKeys: 'Pijltjes',
+  keyHistory: 'Toetsgeschiedenis',
+  noKeyHistory: 'Nog geen geschiedenis',
+  keyboardInstruction1: '🎯 Druk op een willekeurige toets, het systeem toont informatie in realtime',
+  keyboardInstruction2: '🎨 Niet-geteste toetsen worden grijs weergegeven, geteste toetsen groen',
+  keyboardInstruction3: '⚡ Ingedrukte toetsen worden blauw gemarkeerd en keren terug naar normaal bij loslaten',
+  keyboardInstruction4: '📊 Probeer alle toetsen in te drukken om 100% dekking te bereiken',
+  keyboardInstruction5: '🔄 Klik op "Test Resetten" om opnieuw te beginnen',
+  detectedKeyboard: 'Gedetecteerd Toetsenbord',
+  untested: 'Niet Getest',
+  tested: 'Getest',
+  pressing: 'Indrukken',
+}
+
+export default nlNL

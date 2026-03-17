@@ -1,0 +1,40 @@
+import { Translations } from '../types'
+import { en } from './en'
+
+export const thTH: Translations = {
+  ...en,
+  appTitle: 'เครื่องมือทดสอบฮาร์ดแวร์',
+  appDescription: 'ทดสอบหน้าจอ, คีย์บอร์ด, เมาส์, เกมแพด, กล้อง และอุปกรณ์เสียงของคุณออนไลน์',
+  home: 'หน้าแรก',
+  backToHome: 'กลับไปหน้าแรก',
+  language: 'ภาษา',
+  screenTest: 'ทดสอบหน้าจอ',
+  start: 'เริ่ม',
+  stop: 'หยุด',
+  exit: 'ออก',
+  keyboardTest: 'ทดสอบคีย์บอร์ด',
+  keyboardTestTitle: 'ทดสอบคีย์บอร์ด',
+  keyboardTestDescription: 'ทดสอบการตอบสนองของคีย์บอร์ด ตรวจจับสถานะและฟังก์ชันของคีย์',
+  testCoverage: 'ความครอบคลุมการทดสอบ',
+  testedKeys: 'คีย์ที่ทดสอบแล้ว',
+  resetTest: '🔄 รีเซ็ตการทดสอบ',
+  currentKeyInfo: 'ข้อมูลคีย์ปัจจุบัน',
+  pressedKeys: 'กด',
+  pressAnyKey: '👆 กดคีย์ใดก็ได้เพื่อเริ่มการทดสอบ',
+  keyboardLayout: 'เค้าโครงคีย์บอร์ด',
+  navigationKeys: 'การนำทาง',
+  arrowKeys: 'ลูกศร',
+  keyHistory: 'ประวัติคีย์',
+  noKeyHistory: 'ยังไม่มีประวัติ',
+  keyboardInstruction1: '🎯 กดคีย์ใดก็ได้ ระบบจะแสดงข้อมูลแบบเรียลไทม์',
+  keyboardInstruction2: '🎨 คีย์ที่ยังไม่ได้ทดสอบจะแสดงเป็นสีเทา คีย์ที่ทดสอบแล้วเป็นสีเขียว',
+  keyboardInstruction3: '⚡ คีย์ที่กดจะถูกเน้นเป็นสีน้ำเงินและกลับสู่สภาพปกติเมื่อปล่อย',
+  keyboardInstruction4: '📊 ลองกดทุกคีย์เพื่อให้ได้ความครอบคลุม 100%',
+  keyboardInstruction5: '🔄 คลิก "รีเซ็ตการทดสอบ" เพื่อเริ่มใหม่',
+  detectedKeyboard: 'คีย์บอร์ดที่ตรวจพบ',
+  untested: 'ยังไม่ได้ทดสอบ',
+  tested: 'ทดสอบแล้ว',
+  pressing: 'กำลังกด',
+}
+
+export default thTH

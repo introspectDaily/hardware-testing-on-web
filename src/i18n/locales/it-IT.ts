@@ -1,0 +1,42 @@
+import { Translations } from '../types'
+import { en } from './en'
+
+export const itIT: Translations = {
+  ...en,
+  appTitle: 'Strumenti di Test Hardware',
+  appDescription: 'Testa online schermo, tastiera, mouse, gamepad, fotocamera e dispositivi audio',
+  home: 'Home',
+  backToHome: 'Torna alla Home',
+  language: 'Lingua',
+  screenTest: 'Test Schermo',
+  screenTestTitle: 'Test Schermo',
+  screenTestDescription: 'Testa risoluzione, visualizzazione colori e tempo di risposta dello schermo',
+  start: 'Avvia',
+  stop: 'Ferma',
+  exit: 'Esci',
+  keyboardTest: 'Test Tastiera',
+  keyboardTestTitle: 'Test Tastiera',
+  keyboardTestDescription: 'Testa risposta tastiera, rileva stato e funzioni dei tasti',
+  testCoverage: 'Copertura Test',
+  testedKeys: 'Tasti Testati',
+  resetTest: '🔄 Ripristina Test',
+  currentKeyInfo: 'Info Tasto Corrente',
+  pressedKeys: 'Premuti',
+  pressAnyKey: '👆 Premi un tasto qualsiasi per iniziare',
+  keyboardLayout: 'Layout Tastiera',
+  navigationKeys: 'Navigazione',
+  arrowKeys: 'Frecce',
+  keyHistory: 'Cronologia Tasti',
+  noKeyHistory: 'Nessuna cronologia ancora',
+  keyboardInstruction1: '🎯 Premi un tasto qualsiasi, il sistema mostrerà le informazioni in tempo reale',
+  keyboardInstruction2: '🎨 I tasti non testati sono mostrati in grigio, quelli testati in verde',
+  keyboardInstruction3: '⚡ I tasti premuti sono evidenziati in blu e tornano normali al rilascio',
+  keyboardInstruction4: '📊 Prova a premere tutti i tasti per raggiungere il 100% di copertura',
+  keyboardInstruction5: '🔄 Clicca su "Ripristina Test" per ricominciare',
+  detectedKeyboard: 'Tastiera Rilevata',
+  untested: 'Non Testato',
+  tested: 'Testato',
+  pressing: 'Premuto',
+}
+
+export default itIT

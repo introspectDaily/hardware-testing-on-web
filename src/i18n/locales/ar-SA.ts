@@ -1,0 +1,40 @@
+import { Translations } from '../types'
+import { en } from './en'
+
+export const arSA: Translations = {
+  ...en,
+  appTitle: 'أدوات اختبار الأجهزة',
+  appDescription: 'اختبر شاشتك ولوحة المفاتيح والفأرة ووحدة التحكم والكاميرا وأجهزة الصوت عبر الإنترنت',
+  home: 'الرئيسية',
+  backToHome: 'العودة إلى الرئيسية',
+  language: 'اللغة',
+  screenTest: 'اختبار الشاشة',
+  start: 'بدء',
+  stop: 'إيقاف',
+  exit: 'خروج',
+  keyboardTest: 'اختبار لوحة المفاتيح',
+  keyboardTestTitle: 'اختبار لوحة المفاتيح',
+  keyboardTestDescription: 'اختبر استجابة لوحة المفاتيح، واكتشف حالة ووظائف المفاتيح',
+  testCoverage: 'تغطية الاختبار',
+  testedKeys: 'المفاتيح المختبرة',
+  resetTest: '🔄 إعادة تعيين الاختبار',
+  currentKeyInfo: 'معلومات المفتاح الحالي',
+  pressedKeys: 'مضغوط',
+  pressAnyKey: '👆 اضغط على أي مفتاح لبدء الاختبار',
+  keyboardLayout: 'تخطيط لوحة المفاتيح',
+  navigationKeys: 'التنقل',
+  arrowKeys: 'الأسهم',
+  keyHistory: 'سجل المفاتيح',
+  noKeyHistory: 'لا يوجد سجل بعد',
+  keyboardInstruction1: '🎯 اضغط على أي مفتاح، سيعرض النظام المعلومات في الوقت الفعلي',
+  keyboardInstruction2: '🎨 المفاتيح غير المختبرة تظهر باللون الرمادي، والمختبرة بالأخضر',
+  keyboardInstruction3: '⚡ المفاتيح المضغوطة تُبرز باللون الأزرق وتعود للطبيعي عند التحرير',
+  keyboardInstruction4: '📊 حاول الضغط على جميع المفاتيح للوصول إلى 100٪ تغطية',
+  keyboardInstruction5: '🔄 انقر على "إعادة تعيين الاختبار" لإعادة البدء',
+  detectedKeyboard: 'لوحة المفاتيح المكتشفة',
+  untested: 'غير مختبر',
+  tested: 'مختبر',
+  pressing: 'مضغوط',
+}
+
+export default arSA

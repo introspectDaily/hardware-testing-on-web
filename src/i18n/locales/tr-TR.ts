@@ -1,0 +1,40 @@
+import { Translations } from '../types'
+import { en } from './en'
+
+export const trTR: Translations = {
+  ...en,
+  appTitle: 'Donanım Test Araçları',
+  appDescription: 'Ekran, klavye, fare, gamepad, kamera ve ses cihazlarınızı çevrimiçi test edin',
+  home: 'Ana Sayfa',
+  backToHome: 'Ana Sayfaya Dön',
+  language: 'Dil',
+  screenTest: 'Ekran Testi',
+  start: 'Başlat',
+  stop: 'Dur',
+  exit: 'Çık',
+  keyboardTest: 'Klavye Testi',
+  keyboardTestTitle: 'Klavye Testi',
+  keyboardTestDescription: 'Klavye tuş tepkisini test edin, tuş durumunu ve işlevlerini algılayın',
+  testCoverage: 'Test Kapsamı',
+  testedKeys: 'Test Edilen Tuşlar',
+  resetTest: '🔄 Testi Sıfırla',
+  currentKeyInfo: 'Geçerli Tuş Bilgisi',
+  pressedKeys: 'Basılan',
+  pressAnyKey: '👆 Teste başlamak için herhangi bir tuşa basın',
+  keyboardLayout: 'Klavye Düzeni',
+  navigationKeys: 'Navigasyon',
+  arrowKeys: 'Oklar',
+  keyHistory: 'Tuş Geçmişi',
+  noKeyHistory: 'Henüz geçmiş yok',
+  keyboardInstruction1: '🎯 Herhangi bir tuşa basın, sistem bilgileri gerçek zamanlı olarak gösterecek',
+  keyboardInstruction2: '🎨 Test edilmemiş tuşlar gri, test edilmiş tuşlar yeşil gösterilir',
+  keyboardInstruction3: '⚡ Basılan tuşlar mavi renkte vurgulanır ve bırakıldığında normale döner',
+  keyboardInstruction4: '📊 %100 kapsama elde etmek için tüm tuşlara basmayı deneyin',
+  keyboardInstruction5: '🔄 Yeniden başlamak için "Testi Sıfırla" düğmesine tıklayın',
+  detectedKeyboard: 'Algılanan Klavye',
+  untested: 'Test Edilmedi',
+  tested: 'Test Edildi',
+  pressing: 'Basılı',
+}
+
+export default trTR

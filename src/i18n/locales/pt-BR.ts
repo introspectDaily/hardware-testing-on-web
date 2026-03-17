@@ -1,0 +1,42 @@
+import { Translations } from '../types'
+import { en } from './en'
+
+export const ptBR: Translations = {
+  ...en,
+  appTitle: 'Ferramentas de Teste de Hardware',
+  appDescription: 'Teste online sua tela, teclado, mouse, gamepad, câmera e dispositivos de áudio',
+  home: 'Início',
+  backToHome: 'Voltar ao Início',
+  language: 'Idioma',
+  screenTest: 'Teste de Tela',
+  screenTestTitle: 'Teste de Tela',
+  screenTestDescription: 'Teste a resolução, exibição de cores e tempo de resposta da sua tela',
+  start: 'Iniciar',
+  stop: 'Parar',
+  exit: 'Sair',
+  keyboardTest: 'Teste de Teclado',
+  keyboardTestTitle: 'Teste de Teclado',
+  keyboardTestDescription: 'Teste a resposta do teclado, detecte o estado e funções das teclas',
+  testCoverage: 'Cobertura do Teste',
+  testedKeys: 'Teclas Testadas',
+  resetTest: '🔄 Reiniciar Teste',
+  currentKeyInfo: 'Info da Tecla Atual',
+  pressedKeys: 'Pressionadas',
+  pressAnyKey: '👆 Pressione qualquer tecla para começar',
+  keyboardLayout: 'Layout do Teclado',
+  navigationKeys: 'Navegação',
+  arrowKeys: 'Setas',
+  keyHistory: 'Histórico de Teclas',
+  noKeyHistory: 'Sem histórico ainda',
+  keyboardInstruction1: '🎯 Pressione qualquer tecla, o sistema mostrará informações em tempo real',
+  keyboardInstruction2: '🎨 Teclas não testadas aparecem em cinza, testadas em verde',
+  keyboardInstruction3: '⚡ Teclas pressionadas são destacadas em azul e voltam ao normal ao soltar',
+  keyboardInstruction4: '📊 Tente pressionar todas as teclas para atingir 100% de cobertura',
+  keyboardInstruction5: '🔄 Clique em "Reiniciar Teste" para recomeçar',
+  detectedKeyboard: 'Teclado Detectado',
+  untested: 'Não Testado',
+  tested: 'Testado',
+  pressing: 'Pressionando',
+}
+
+export default ptBR

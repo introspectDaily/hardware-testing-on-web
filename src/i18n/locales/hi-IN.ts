@@ -1,0 +1,40 @@
+import { Translations } from '../types'
+import { en } from './en'
+
+export const hiIN: Translations = {
+  ...en,
+  appTitle: 'हार्डवेयर परीक्षण उपकरण',
+  appDescription: 'स्क्रीन, कीबोर्ड, माउस, गेमपैड, कैमरा और ऑडियो डिवाइस का ऑनलाइन परीक्षण',
+  home: 'होम',
+  backToHome: 'होम पर वापस जाएं',
+  language: 'भाषा',
+  screenTest: 'स्क्रीन परीक्षण',
+  start: 'प्रारंभ',
+  stop: 'रोकें',
+  exit: 'बाहर निकलें',
+  keyboardTest: 'कीबोर्ड परीक्षण',
+  keyboardTestTitle: 'कीबोर्ड परीक्षण',
+  keyboardTestDescription: 'कीबोर्ड की प्रतिक्रिया का परीक्षण करें, कुंजी स्थिति और कार्यों का पता लगाएं',
+  testCoverage: 'परीक्षण कवरेज',
+  testedKeys: 'परीक्षित कुंजियाँ',
+  resetTest: '🔄 परीक्षण रीसेट करें',
+  currentKeyInfo: 'वर्तमान कुंजी जानकारी',
+  pressedKeys: 'दबाया गया',
+  pressAnyKey: '👆 शुरू करने के लिए कोई भी कुंजी दबाएं',
+  keyboardLayout: 'कीबोर्ड लेआउट',
+  navigationKeys: 'नेविगेशन',
+  arrowKeys: 'तीर',
+  keyHistory: 'कुंजी इतिहास',
+  noKeyHistory: 'अभी तक कोई इतिहास नहीं',
+  keyboardInstruction1: '🎯 कोई भी कुंजी दबाएं, सिस्टम वास्तविक समय में जानकारी प्रदर्शित करेगा',
+  keyboardInstruction2: '🎨 गैर-परीक्षित कुंजियाँ ग्रे में, परीक्षित कुंजियाँ हरे रंग में दिखाई जाती हैं',
+  keyboardInstruction3: '⚡ दबाई गई कुंजियाँ नीले रंग में हाइलाइट होती हैं और छोड़ने पर सामान्य हो जाती हैं',
+  keyboardInstruction4: '📊 100% कवरेज प्राप्त करने के लिए सभी कुंजियाँ दबाने का प्रयास करें',
+  keyboardInstruction5: '🔄 फिर से शुरू करने के लिए "परीक्षण रीसेट करें" पर क्लिक करें',
+  detectedKeyboard: 'पता लगाया गया कीबोर्ड',
+  untested: 'अपरीक्षित',
+  tested: 'परीक्षित',
+  pressing: 'दबाना',
+}
+
+export default hiIN
