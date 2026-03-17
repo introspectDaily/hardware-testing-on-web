@@ -102,6 +102,10 @@ export const zhTW: Translations = {
   mouseInstruction4: '🔄 上下左右滾動滾輪以測試滾輪功能',
   mouseInstruction5: '💡 在軌跡區域內雙擊滑鼠以測試雙擊功能',
 
+  // 頁腳 / 頁面
+  privacyPolicy: '隱私權政策',
+  aboutUs: '關於我們',
+
   // 手柄測試
   gamepadTestTitle: '手柄測試',
   gamepadTestDescription: '測試手柄按鍵、搖桿、扳機和震動功能',

@@ -114,6 +114,10 @@ export const en: Translations = {
   mouseInstruction4: '🔄 Rotate the scroll wheel up, down, and sideways to test it',
   mouseInstruction5: '💡 Double-click anywhere inside the trail area to test double-click',
 
+  // Footer / Pages
+  privacyPolicy: 'Privacy Policy',
+  aboutUs: 'About',
+
   // Gamepad Test
   gamepadTestTitle: 'Gamepad Test',
   gamepadTestDescription: 'Test gamepad buttons, analog sticks, triggers, and vibration',

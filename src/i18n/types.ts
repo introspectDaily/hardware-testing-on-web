@@ -146,6 +146,10 @@ export interface Translations {
   mouseInstruction4: string
   mouseInstruction5: string
 
+  // Footer / Pages
+  privacyPolicy: string
+  aboutUs: string
+
   // Gamepad Test
   gamepadTestTitle: string
   gamepadTestDescription: string

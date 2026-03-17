@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hardware-testing-on-web.pages.dev/sitemap.xml

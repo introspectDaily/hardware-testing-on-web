@@ -114,6 +114,10 @@ export const zhCN: Translations = {
   mouseInstruction4: '🔄 上下左右滚动滚轮以测试滚轮功能',
   mouseInstruction5: '💡 在轨迹区域内双击鼠标以测试双击功能',
 
+  // 页脚 / 页面
+  privacyPolicy: '隐私政策',
+  aboutUs: '关于我们',
+
   // 手柄测试
   gamepadTestTitle: '手柄测试',
   gamepadTestDescription: '测试手柄按键、摇杆、扳机和震动功能',

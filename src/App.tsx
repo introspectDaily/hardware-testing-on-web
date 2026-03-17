@@ -4,6 +4,8 @@ import ScreenTest from './components/ScreenTest'
 import KeyboardTest from './components/KeyboardTest'
 import MouseTest from './components/MouseTest'
 import GamepadTest from './components/GamepadTest'
+import AboutPage from './components/AboutPage'
+import PrivacyPolicy from './components/PrivacyPolicy'
 import LanguageSwitcher from './components/LanguageSwitcher'
 
 const App = () => {
@@ -21,6 +23,30 @@ const App = () => {
     { id: 'microphone',name: t.micTest,       description: '' },
     { id: 'speaker',   name: t.speakerTest,   description: '' },
   ]
+
+  if (currentTest === 'about') {
+    return (
+      <div className="app-container">
+        <header>
+          <div><h1>{t.appTitle}</h1></div>
+          <LanguageSwitcher />
+        </header>
+        <main><AboutPage onBack={() => setCurrentTest(null)} /></main>
+      </div>
+    )
+  }
+
+  if (currentTest === 'privacy') {
+    return (
+      <div className="app-container">
+        <header>
+          <div><h1>{t.appTitle}</h1></div>
+          <LanguageSwitcher />
+        </header>
+        <main><PrivacyPolicy onBack={() => setCurrentTest(null)} /></main>
+      </div>
+    )
+  }
 
   if (currentTest === 'screen') {
     return (
@@ -135,6 +161,21 @@ const App = () => {
           })}
         </div>
       </main>
+      <footer style={{
+        textAlign: 'center', padding: '1.5rem 1rem',
+        fontSize: '0.85rem', color: '#94a3b8',
+        borderTop: '1px solid #e2e8f0', marginTop: '2rem',
+      }}>
+        <button onClick={() => setCurrentTest('about')}
+          style={{ background: 'none', border: 'none', color: '#667eea', cursor: 'pointer', fontSize: '0.85rem', padding: '0 0.5rem' }}>
+          {t.aboutUs}
+        </button>
+        <span style={{ color: '#e2e8f0' }}>|</span>
+        <button onClick={() => setCurrentTest('privacy')}
+          style={{ background: 'none', border: 'none', color: '#667eea', cursor: 'pointer', fontSize: '0.85rem', padding: '0 0.5rem' }}>
+          {t.privacyPolicy}
+        </button>
+      </footer>
     </div>
   )
 }
